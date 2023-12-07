@@ -52,4 +52,5 @@ export const ButtonList = styled.ul`
   gap: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
+  justify-content: center;
 `;

@@ -3,14 +3,14 @@ import { Button, ButtonList } from './FeedbackOptions.styled';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ButtonList>
-      {options.map((key, i) => {
+      {options.map((option, i) => {
         return (
           <Button
-            onClick={() => onLeaveFeedback(key)}
+            onClick={() => onLeaveFeedback(option)}
             key={i}
-            buttonStyle={key}
+            buttonStyle={option}
           >
-            {key}
+            {option}
           </Button>
         );
       })}
